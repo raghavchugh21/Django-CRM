@@ -3,7 +3,7 @@
 {% block content %}
     <a href="{% url 'agents:agent-list' %}">Go back to agents</a>
     <hr />
-    <h1>Create a new agent</h1>
+    <h1>Are you sure you want to delete this agent?</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
