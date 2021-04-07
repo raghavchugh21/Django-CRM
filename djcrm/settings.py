@@ -149,3 +149,8 @@ if not DEBUG:
     X_FRAME_OPTIONS = "DENY"
 
     ALLOWED_HOSTS = ["*"]
+    EMAIL_HOST = 'smtp.mailgun.org'
+    EMAIL_HOST_USER = 'postmaster@mg.domain.com'
+    EMAIL_SE_TLS = True
+    EMAIL_PORT = 587
+    DEFAULT_FROM_EMAIL = 'yourname@domain.com'
