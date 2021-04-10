@@ -1,4 +1,6 @@
 from pathlib import Path
+
+import dj_database_url
 import environ
 
 # env = environ.Env(
@@ -75,6 +77,7 @@ WSGI_APPLICATION = 'djcrm.wsgi.application'
 
 DATABASES = {
     'default': {
+        'default': dj_database_url.config(default=config('DATABASE_URL'))
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'djcrm',
         'USER': 'djcrmuser',
