@@ -12,13 +12,13 @@ import environ
 # DEBUG = env('DEBUG')
 # SECRET_KEY = env('SECRET_KEY')
 
-DEBUG=False
-SECRET_KEY='9l=jjp#g0-mbdfsntqww91&s9b^a!kj44ljl4f5h!+uoft$h6u'
+DEBUG = False
+SECRET_KEY = '9l=jjp#g0-mbdfsntqww91&s9b^a!kj44ljl4f5h!+uoft$h6u'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -145,5 +145,4 @@ if not DEBUG:
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
     X_FRAME_OPTIONS = "DENY"
-
     ALLOWED_HOSTS = ["*"]
