@@ -1,7 +1,7 @@
 from pathlib import Path
 import environ
 import django_heroku
-
+import os
 env = environ.Env(
     DEBUG=(bool, False)
 )
